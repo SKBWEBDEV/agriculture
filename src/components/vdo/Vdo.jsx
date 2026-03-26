@@ -1,4 +1,4 @@
-import vdo from '../../assets/Vdo.png'
+import okey from "../../assets/okey.png"
 import Container from '../container/Container'
 import { HiMiniPlay } from "react-icons/hi2";
 
@@ -7,7 +7,8 @@ const Vdo = () => {
   return (
     <div
     className='h-[690.99px] mt-160 bg-cover py-50 relative'
-    style={{backgroundImage: `url(${vdo})`}}>
+    style={{backgroundImage: `url(${okey})`}}
+    >
 
       <Container>
         <div className='flex items-center justify-between'>

@@ -111,7 +111,7 @@ const Navber = () => {
                 <p
                   className="cursor-pointer gap-3 flex text-[20px] items-center font-semibold text-[#878680] hover:text-black duration-300"
                   onClick={() => setDropon(!dropon)}>
-                  News{" "}
+                  <Link to="/news">News</Link>
                   <span className="text-[18px] mt-2">
                     <IoIosArrowDown />
                   </span>
@@ -119,12 +119,12 @@ const Navber = () => {
 
                 {dropon && (
                   <ul className="absolute mt-2 w-40 bg-white shadow-md rounded-md">
-                    <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
+                    {/* <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
                       News
                     </li>
                     <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
                       News list
-                    </li>
+                    </li> */}
                     <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
                       News-grid
                     </li>

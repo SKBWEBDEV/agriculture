@@ -1,105 +1,49 @@
-import { useState } from "react";
-import { IoIosArrowDown } from "react-icons/io";
-import section from "../../assets/section.png";
-import Container from "../container/Container";
-import { Link } from "react-router";
-import { RiFindReplaceLine } from "react-icons/ri";
-import { FaShoppingCart } from "react-icons/fa";
+import banner from "../../assets/banner.png"
+import footer from "../../assets/footer.png"
 
-import logo from "../../assets/logo.png";
+
 import { FaTwitter } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { TbCircleLetterPFilled } from "react-icons/tb";
 import { FaInstagram } from "react-icons/fa6";
-import { FaPhoneVolume } from "react-icons/fa6";
-import { FaEnvelopeOpenText } from "react-icons/fa";
-import { FaLocationDot } from "react-icons/fa6";
+import { RiFindReplaceLine } from "react-icons/ri";
+import { FaShoppingCart } from "react-icons/fa";
 
-// import {Link} from "react-router"
+import { Link } from "react-router";
+import { IoIosArrowDown } from "react-icons/io";
+import { useState } from "react";
 
-const Nav = () => {
-  const [drop, setDrop] = useState(false);
-  const [dropo, setDropo] = useState(false);
-  const [dropon, setDropon] = useState(false);
-  const [dropone, setDropone] = useState(false);
-  const [dro, setDro] = useState(false);
+const Navban = () => {
+
+    const [drop, setDrop] = useState(false);
+    const [dropo, setDropo] = useState(false);
+    const [dropon, setDropon] = useState(false);
+    const [dropone, setDropone] = useState(false);
+    const [dro, setDro] = useState(false);
 
   return (
-    <div>
-      <Container>
-        <div className="py-5.5 flex items-center justify-between">
-          <div>
-            <img src={logo} alt="" />
-          </div>
+    <div className="h-250 bg-cover bg-no-repeat w-full"
+    style={{backgroundImage: `url(${banner})`}}>
 
-          <div className="flex gap-2.5">
-            <p className="bg-[#E4E2D7] px-3.25 py-3.5 rounded-full cursor-pointer">
-              <FaTwitter />
-            </p>
-            <p className="bg-[#E4E2D7] px-3.25 py-3.5 rounded-full cursor-pointer">
-              <FaFacebook />
-            </p>
-            <p className="bg-[#E4E2D7] px-3.25 py-3.5 rounded-full cursor-pointer">
-              <TbCircleLetterPFilled />
-            </p>
-            <p className="bg-[#E4E2D7] px-3.25 py-3.5 rounded-full cursor-pointer">
-              <FaInstagram />
-            </p>
-          </div>
+      <div className="">
+        <div className="w-457.5 mx-auto flex justify-between items-center px-[44.5px] py-7.5">
 
-          <div className="flex items-center gap-5">
-            <p className="text-[#4BAF47]">
-              <FaPhoneVolume className="w-7.5 h-7.5" />
-            </p>
-            <div>
-              <p className="text-[#878680] font-semibold text-[12px]">
-                Call anytime
-              </p>
-              <p className="text-[#1F1E17] font-semibold text-[14px]">
-                + 98 (000) - 9630
-              </p>
-            </div>
-          </div>
-
-          <div className="flex items-center gap-5">
-            <p className="text-[#4BAF47]">
-              <FaEnvelopeOpenText className="w-7.5 h-7.5" />
-            </p>
-            <div>
-              <p className="text-[#878680] font-semibold text-[12px]">
-                Send email
-              </p>
-              <p className="text-[#1F1E17] font-semibold text-[14px]">
-                ambed@agrios.com
-              </p>
-            </div>
-          </div>
-
-          <div className="flex items-center gap-5">
-            <p className="text-[#4BAF47]">
-              <FaLocationDot className="w-7.5 h-7.5" />
-            </p>
-            <div>
-              <p className="text-[#878680] font-semibold text-[12px]">
-                380 St Kilda Road
-              </p>
-              <p className="text-[#1F1E17] font-semibold text-[14px]">
-                Melbourne, Australia
-              </p>
-            </div>
-          </div>
+        <div>
+          <img src={footer} alt="" />
         </div>
-      </Container>
 
-      <div
-        className="h-18 absolute  left-0 z-10 w-full bg-cover bg-center"
-        style={{ backgroundImage: `url(${section})` }}>
-        <Container>
-          <div className="flex justify-between py-3">
-            <div className="flex justify-around w-full">
+        <div className="flex gap-6">
+          <p className="text-white bg-[#FFFFFF]/15 w-10 h-10 py-3.25 px-3.25 rounded-full cursor-pointer"><FaTwitter/></p>
+          <p className="text-white bg-[#FFFFFF]/15 w-10 h-10 py-3.25 px-3.25 rounded-full cursor-pointer"><FaFacebook/></p>
+          <p className="text-white bg-[#FFFFFF]/15 w-10 h-10 py-3.25 px-3.25 rounded-full cursor-pointer"><TbCircleLetterPFilled/></p>
+          <p className="text-white bg-[#FFFFFF]/15 w-10 h-10 py-3.25 px-3.25 rounded-full cursor-pointer"><FaInstagram/></p>
+        </div>
+
+        <div className="flex gap-8 py-3 ">
+            <div className="flex gap-[50.66px]">
               <div className="relative inline-block">
                 <p
-                  className="cursor-pointer gap-3 flex text-[20px] items-center font-semibold text-[#878680] hover:text-black duration-300"
+                  className="cursor-pointer gap-3 flex text-[20px] items-center font-semibold text-[#ffff]  duration-300"
                   onClick={() => setDrop(!drop)}>
                   <Link to="/">Home</Link>{" "}
                   <span className="text-[18px] mt-2">
@@ -131,14 +75,14 @@ const Nav = () => {
               </div>
               <div>
                 <ul>
-                  <li className="cursor-pointer  text-[20px] font-semibold text-[#878680] hover:text-black duration-300">
+                  <li className="cursor-pointer  text-[20px] font-semibold text-[#ffff] duration-300">
                     <Link to="/abo">About</Link>
                   </li>
                 </ul>
               </div>
               <div className="relative inline-block">
                 <p
-                  className="cursor-pointer gap-3 flex text-[20px] items-center font-semibold text-[#878680] hover:text-black duration-300"
+                  className="cursor-pointer gap-3 flex text-[20px] items-center font-semibold text-[#ffff]  duration-300"
                   onClick={() => setDropo(!dropo)}>
                   <Link to="/service">Services</Link>
                   <span className="text-[18px] mt-2">
@@ -158,7 +102,7 @@ const Nav = () => {
               </div>
               <div className="relative inline-block">
                 <p
-                  className="cursor-pointer gap-3 flex text-[20px] items-center font-semibold text-[#878680] hover:text-black duration-300"
+                  className="cursor-pointer gap-3 flex text-[20px] items-center font-semibold text-[#ffff]  duration-300"
                   onClick={() => setDro(!dro)}>
                   <Link to= "/project">Project</Link>
                   <span className="text-[18px] mt-2">
@@ -176,7 +120,7 @@ const Nav = () => {
               </div>
               <div className="relative inline-block">
                 <p
-                  className="cursor-pointer gap-3 flex text-[20px] items-center font-semibold text-[#878680] hover:text-black duration-300"
+                  className="cursor-pointer gap-3 flex text-[20px] items-center font-semibold text-[#ffff]  duration-300"
                   onClick={() => setDropon(!dropon)}>
                   <Link to="/news">News</Link>
                   <span className="text-[18px] mt-2">
@@ -203,7 +147,7 @@ const Nav = () => {
               </div>
               <div className="relative inline-block">
                 <p
-                  className="cursor-pointer gap-3 flex text-[20px] items-center font-semibold text-[#878680] hover:text-black duration-300"
+                  className="cursor-pointer gap-3 flex text-[20px] items-center font-semibold text-[#ffff]  duration-300"
                   onClick={() => setDropone(!dropone)}>
                   Shop{" "}
                   <span className="text-[18px] mt-2">
@@ -219,13 +163,13 @@ const Nav = () => {
                 )}
               </div>
               <div className="relative inline-block">
-                <p className="cursor-pointer gap-3 flex text-[20px] items-center font-semibold text-[#878680] hover:text-black duration-300">
+                <p className="cursor-pointer gap-3 flex text-[20px] items-center font-semibold text-[#ffff]  duration-300">
                   <Link to="/contact">Contact</Link>
                 </p>
               </div>
             </div>
 
-            <div>
+            <div className="text-white">
               <div className="flex gap-4">
                 <p className="w-12 h-12 text-[35px] cursor-pointer">
                   <RiFindReplaceLine />
@@ -236,10 +180,13 @@ const Nav = () => {
               </div>
             </div>
           </div>
-        </Container>
-      </div>
-    </div>
-  );
-};
 
-export default Nav;
+      </div>
+      </div>
+
+
+    </div>
+  )
+}
+
+export default Navban

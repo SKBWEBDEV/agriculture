@@ -5,6 +5,7 @@ import { createBrowserRouter, RouterProvider } from "react-router";
 import Project from "./components/project/Project";
 import Helthfood from "./components/helthfood/Helthfood";
 import Service from "./components/services/Service";
+import Khobor from "./components/khobor/Khobor";
 
 
 
@@ -54,6 +55,14 @@ function App() {
     element: (
       <div>
         <Service/>
+      </div>
+    )
+   },
+   {
+    path: "/news",
+    element: (
+      <div>
+        <Khobor/>
       </div>
     )
    }
