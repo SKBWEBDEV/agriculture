@@ -1,4 +1,4 @@
-import frame from "../../assets/frame.png"
+import talha from "../../assets/talha.png"
 import Container from '../container/Container'
 
 const Sho = () => {

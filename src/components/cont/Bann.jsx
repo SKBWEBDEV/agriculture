@@ -1,4 +1,4 @@
-import frame from "../../assets/frame.png"
+import talha from "../../assets/talha.png"
 import bann from "../../assets/bann.png"
 import map from "../../assets/map.png"
 import Container from '../container/Container'
@@ -9,7 +9,7 @@ const Bann = () => {
       <div>
 
       <div
-      style={{backgroundImage: `url(${frame})`}}
+      style={{backgroundImage: `url(${talha})`}}
       className='py-50 bg-cover'>
         
         <Container>

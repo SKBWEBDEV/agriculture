@@ -1,12 +1,12 @@
 import React from 'react'
-import frame from "../../assets/frame.png"
+import talha from "../../assets/talha.png"
 import Container from '../container/Container'
 const Ab = () => {
   return (
     <div>
 
       <div
-        style={{backgroundImage: `url(${frame})`}}
+        style={{backgroundImage: `url(${talha})`}}
         className='py-50 bg-cover'>
           <Container>
             {/* ------------------------banner part stat------------------ */}

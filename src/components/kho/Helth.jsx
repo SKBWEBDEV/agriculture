@@ -39,7 +39,7 @@ const Helth = () => {
               <img src={helthree} alt="" />
             </div>
             <div className="flex items-center gap-4 absolute -bottom-13 left-7.5 ">
-              <img src={chall} alt="" />
+              <img src={vagi} alt="" />
               <div className="bg-white shadow-xl w-59.25 h-[102.59px] rounded-lg text-center py-[20.5px]">
                 <h2 className="font-normal text-[24px] font-primary text-[#04000B]">Fresh</h2>
                 <p className="font-normal text-[16px] font-primary text-[#49A760]">Vegetable</p>
@@ -52,7 +52,7 @@ const Helth = () => {
               <img src={helthfour} alt="" />
             </div>
             <div className="flex items-center gap-4 absolute -bottom-13 left-7.5 ">
-              <img src={chall} alt="" />
+              <img src={modhu} alt="" />
               <div className="bg-white shadow-xl w-59.25 h-[102.59px] rounded-lg text-center py-[20.5px]">
                 <h2 className="font-normal text-[24px] font-primary text-[#04000B]">Organic</h2>
                 <p className="font-normal text-[16px] font-primary text-[#49A760]">Products</p>

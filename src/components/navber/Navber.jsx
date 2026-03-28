@@ -1,4 +1,4 @@
-import section from "../../assets/section.png";
+import skb from "../../assets/skb.png";
 import ele from "../../assets/ele.png";
 import elem from "../../assets/elem.png";
 import one from "../../assets/one.png";
@@ -23,7 +23,7 @@ const Navber = () => {
     <div>
       <div
         className="h-18 absolute top-25 left-0 z-10 w-full bg-cover bg-center"
-        style={{ backgroundImage: `url(${section})` }}>
+        style={{ backgroundImage: `url(${skb})` }}>
         <Container>
           <div className="flex justify-between py-3">
             <div className="flex justify-around w-full">

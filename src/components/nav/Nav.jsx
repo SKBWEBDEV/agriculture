@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
-import section from "../../assets/section.png";
+import skb from "../../assets/skb.png";
 import Container from "../container/Container";
 import { Link } from "react-router";
 import { RiFindReplaceLine } from "react-icons/ri";
@@ -93,7 +93,7 @@ const Nav = () => {
 
       <div
         className="h-18 absolute  left-0 z-10 w-full bg-cover bg-center"
-        style={{ backgroundImage: `url(${section})` }}>
+        style={{ backgroundImage: `url(${skb})` }}>
         <Container>
           <div className="flex justify-between py-3">
             <div className="flex justify-around w-full">
