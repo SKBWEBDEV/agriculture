@@ -6,7 +6,7 @@ const Sho = () => {
     <div>
 
       <div
-        style={{backgroundImage: `url(${frame})`}}
+        style={{backgroundImage: `url(${talha})`}}
         className='py-50 bg-cover'>
           <Container>
             {/* ------------------------banner part stat------------------ */}
