@@ -70,7 +70,7 @@ const Navber = () => {
                 <p
                   className="cursor-pointer gap-3 flex text-[20px] items-center font-semibold text-[#878680] hover:text-black duration-300"
                   onClick={() => setDropo(!dropo)}>
-                  Services{" "}
+                  <Link to="/abo">Services</Link>
                   <span className="text-[18px] mt-2">
                     <IoIosArrowDown />
                   </span>
