@@ -109,7 +109,7 @@ const Nav = () => {
                 {drop && (
                   <ul className="absolute mt-2 w-40 bg-white shadow-md rounded-md">
                     <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
-                      Home 1
+                      <Link to= "/homeone">Home 1</Link>
                     </li>
                     <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
                       Home 2

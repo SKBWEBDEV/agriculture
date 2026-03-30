@@ -7,6 +7,7 @@ import Helthfood from "./components/helthfood/Helthfood";
 import Service from "./components/services/Service";
 import Khobor from "./components/khobor/Khobor";
 import Shop from "./components/shop/Shop";
+import Homeone from "./components/homeone/Homeone";
 
 
 
@@ -72,6 +73,14 @@ function App() {
     element: (
       <div>
         <Shop/>
+      </div>
+    )
+   },
+   {
+    path: "/homeone",
+    element: (
+      <div>
+        <Homeone/>
       </div>
     )
    }
